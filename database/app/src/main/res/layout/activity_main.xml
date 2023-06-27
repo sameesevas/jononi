@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/Jononi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Jononi"
+        android:textColor="#FC0C6CC0"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Jononi"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20sp"
+        android:autofillHints=""
+        android:background="#E9024E77"
+        android:drawableStart="@drawable/ic_baseline_person_24"
+        android:drawablePadding="20sp"
+        android:hint="Username"
+        android:inputType="text"
+        android:padding="20sp"
+        android:textColor="#F5F0F2F4"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="220dp"
+        android:layout_height="135dp"
+
+        android:layout_marginStart="140dp"
+        android:layout_marginEnd="140dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Jononi"
+        app:srcCompat="@drawable/logopp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/username"
+        android:layout_marginStart="20sp"
+        android:layout_marginTop="28sp"
+        android:layout_marginEnd="20sp"
+        android:autofillHints=""
+        android:background="#E9024E77"
+        android:drawableStart="@drawable/ic_baseline_vpn_key_24"
+        android:drawablePadding="20sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:padding="20sp"
+        android:textColor="#F5F0F2F4"
+        android:textColorHint="#FFFFFF"
+        android:textSize="20sp"
+
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/username"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/login"
+        android:layout_width="157dp"
+        android:layout_height="48dp"
+        android:layout_below="@id/password"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="135dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#E9024E77"
+        android:text="Log in"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.195"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/password"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <TextView
+        android:id="@+id/no_account"
+        android:layout_width="227dp"
+        android:layout_height="24dp"
+        android:layout_below="@id/login"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="120dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="120dp"
+        android:text="Don't have an account?"
+        android:textColor="#03115A"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.196"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <Button
+        android:id="@+id/signup"
+        android:layout_width="153dp"
+        android:layout_height="47dp"
+        android:layout_below="@id/no_account"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#E9024E77"
+        android:text="Sign Up"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/login"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

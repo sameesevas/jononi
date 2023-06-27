@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    >
+
+
+
+    <LinearLayout
+        android:id="@+id/linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#392B2B"
+            android:padding="16dp"
+            android:text="Question"
+            android:textSize="15sp"
+            android:textColor="#ffffff" >
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rl_query_line"
+            android:layout_height="1dp"
+            android:background="@drawable/headercolor"
+            android:layout_width="match_parent"></RelativeLayout>
+
+        <TextView
+            android:id="@+id/ans"
+            android:layout_height="wrap_content"
+            android:background="@drawable/headercolor"
+            android:layout_width="match_parent"
+            android:padding="16dp"
+            android:text="Answer"
+            android:visibility="gone"
+            android:textColor="#ffffff"
+            android:textSize="15sp"
+            android:textStyle="bold">
+
+        </TextView>
+
+        <RelativeLayout
+            android:id="@+id/rl_ans_line"
+            android:layout_height="1dp"
+            android:background="@drawable/headercolor"
+            android:visibility="gone"
+
+            android:layout_width="match_parent"></RelativeLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

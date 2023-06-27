@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "298116448269",
+    "project_id": "another-f8ab7",
+    "storage_bucket": "another-f8ab7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:298116448269:android:fe8ccdd20f0b9071b7d544",
+        "android_client_info": {
+          "package_name": "com.example.idp_jononi_final_version"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "298116448269-9mulc4qmcuddh59jaepl10colr899g9a.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDh03mmtlan6rI7sVUTmbpyVfy6xSU2HGs"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "298116448269-9mulc4qmcuddh59jaepl10colr899g9a.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

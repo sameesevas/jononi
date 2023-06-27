@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".Chatbot">
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        tools:layout_editor_absoluteX="26dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:visibility="visible" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/textInputLayout"
+        android:layout_width="398dp"
+        android:layout_height="77dp"
+        android:layout_marginStart="12dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="1.0">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="239dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="15dp"
+            android:background="#C7EAFA"
+            android:hint="text a message..."
+            android:visibility="visible"
+            tools:visibility="visible" />
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <ImageView
+        android:layout_width="42dp"
+        android:layout_height="36dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginBottom="-60dp"
+        android:src="@drawable/add"
+        app:layout_constraintBottom_toTopOf="@+id/textInputLayout"
+        app:layout_constraintStart_toStartOf="parent">
+
+    </ImageView>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_baseline_send_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/ic_baseline_emoji_emotions_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"></ImageView>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

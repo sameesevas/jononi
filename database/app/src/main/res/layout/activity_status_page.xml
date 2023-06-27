@@ -1,0 +1,329 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".status_page">
+
+    <Button
+        android:id="@+id/recommen"
+        android:layout_width="247dp"
+        android:layout_height="52dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="160dp"
+        android:layout_marginTop="632dp"
+        android:layout_marginEnd="160dp"
+        android:backgroundTint="#6e0298"
+        android:text="Recommendation"
+        android:textColor="#FFFFFF"
+        app:cornerRadius="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/include2"
+        tools:ignore="HardcodedText,MissingConstraints" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        app:layout_constraintBottom_toTopOf="@+id/card_view1"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="0dp"
+        tools:visibility="visible" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view4"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:clickable="true"
+        android:fontFamily="serif"
+        app:cardBackgroundColor="#99818ED6"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view2"
+        tools:ignore="MissingConstraints">
+
+
+        <TextView
+            android:id="@+id/bs"
+            android:layout_width="131dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view5"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:fontFamily="serif"
+        app:cardBackgroundColor="#99818ED6"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view3"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/bmi"
+            android:layout_width="150dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp" />
+    </androidx.cardview.widget.CardView>
+
+    />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view2"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:clickable="true"
+        android:fontFamily="serif"
+        app:cardBackgroundColor="#99818ED6"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toStartOf="@+id/card_view3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="143dp"
+            android:layout_height="150dp"
+            android:layout_marginBottom="300dp"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+    <!--    <TextView-->
+    <!--        android:id="@+id/Jononi"-->
+    <!--        android:layout_width="wrap_content"-->
+    <!--        android:layout_height="wrap_content"-->
+    <!--        android:layout_marginTop="30dp"-->
+    <!--        android:fontFamily="serif"-->
+    <!--        android:text="Jononi"-->
+    <!--        android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+    <!--        android:textColor="#FC0C6CC0"-->
+    <!--        android:textSize="20sp"-->
+    <!--        android:textStyle="bold"-->
+    <!--        app:cornerRadius="20sp"-->
+    <!--        app:layout_constraintStart_toEndOf="@+id/imageView"-->
+    <!--        app:layout_constraintTop_toTopOf="parent"-->
+    <!--        tools:ignore="MissingConstraints" />-->
+
+    <TextView
+        android:id="@+id/statusTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="serif"
+        android:text="Current status"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:cornerRadius="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view1"
+        android:layout_width="340dp"
+        android:layout_height="137dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:fontFamily="serif"
+        app:cardBackgroundColor="#99818ED6"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.56"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/statusTextView"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:fontFamily="serif"
+            android:text="Name : "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp" />
+
+        <EditText
+            android:id="@+id/Status_name"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="05dp"
+            android:fontFamily="serif"
+            android:text="Zakia Tamanna "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="50dp"
+            android:fontFamily="serif"
+            android:text="Conceived Date: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp" />
+
+        <EditText
+            android:id="@+id/Status_condate"
+            android:layout_width="175dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="150dp"
+            android:layout_marginTop="40dp"
+            android:fontFamily="serif"
+            android:text="11/22/22 "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp"
+            tools:ignore="InvalidId" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:fontFamily="serif"
+            android:text="Height: "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp" />
+
+        <EditText
+            android:id="@+id/Status_height"
+            android:layout_width="155dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="130dp"
+            android:layout_marginTop="90dp"
+            android:fontFamily="serif"
+            android:text="5ft "
+            android:textAppearance="@style/TextAppearance.AppCompat.Large"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="normal"
+            app:cornerRadius="20sp"
+            tools:ignore="InvalidId" />
+
+
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view3"
+        android:layout_width="150dp"
+        android:layout_height="160dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="true"
+        android:fontFamily="serif"
+        app:cardBackgroundColor="#99818ED6"
+        app:cardCornerRadius="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.888"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/card_view1"
+        tools:ignore="MissingConstraints">
+
+        <TextView
+            android:id="@+id/bp"
+            android:layout_width="138dp"
+            android:layout_height="160dp"
+            android:layout_margin="5dp"
+            android:fontFamily="serif"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:cornerRadius="20sp" />
+    </androidx.cardview.widget.CardView>
+
+<!--    <androidx.cardview.widget.CardView-->
+<!--        android:id="@+id/recommendation"-->
+<!--        android:layout_width="383dp"-->
+<!--        android:layout_height="106dp"-->
+<!--        android:layout_gravity="center"-->
+<!--        android:layout_marginTop="388dp"-->
+<!--        android:layout_marginEnd="10dp"-->
+<!--        android:clickable="true"-->
+<!--        android:fontFamily="serif"-->
+<!--        app:cardBackgroundColor="#99818ED6"-->
+<!--        app:cardCornerRadius="10sp"-->
+<!--        app:layout_constraintEnd_toEndOf="parent"-->
+<!--        app:layout_constraintHorizontal_bias="0.777"-->
+<!--        app:layout_constraintStart_toStartOf="parent"-->
+<!--        app:layout_constraintTop_toBottomOf="@+id/card_view1"-->
+<!--        tools:ignore="MissingConstraints">-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/recom"-->
+<!--            android:layout_width="356dp"-->
+<!--            android:layout_height="81dp"-->
+<!--            android:layout_margin="16dp"-->
+<!--            android:fontFamily="serif"-->
+<!--            android:text="Click here to see your recommendation"-->
+<!--            android:textAlignment="center"-->
+<!--            android:textAppearance="@style/TextAppearance.AppCompat.Large"-->
+<!--            android:textColor="@color/black"-->
+<!--            android:textSize="15sp"-->
+<!--            android:textStyle="bold"-->
+<!--            app:cornerRadius="20sp" />-->
+<!--    </androidx.cardview.widget.CardView>-->
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

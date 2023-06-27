@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+
+    tools:context=".Bloodpressure">
+
+    <TextView
+        android:id="@+id/textViewbp3"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="135dp"
+        android:background="#8603b8"
+        android:capitalize="none"
+        android:text="Low Pressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbp4" />
+
+    <TextView
+        android:id="@+id/textViewbp4"
+        android:layout_width="241dp"
+        android:layout_height="49dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="135dp"
+        android:background="#8603b8"
+        android:capitalize="none"
+        android:text="Elevated or High Pressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewbp2" />
+
+    <include
+        android:id="@+id/include2"
+        layout="@layout/toolbar"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/imageViewbp"
+        android:layout_width="315dp"
+        android:layout_height="219dp"
+        android:layout_marginBottom="250dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/include2"
+        app:layout_constraintVertical_bias="0.113"
+        app:srcCompat="@drawable/blood_p" />
+
+    <TextView
+        android:id="@+id/bppp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="Your Sistolic Pressure is null mmHg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewbp" />
+    <TextView
+        android:id="@+id/bppp2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginEnd="60dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:text="and Diastolic Pressure is null mmHg"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageViewbp" />
+
+
+    <TextView
+        android:id="@+id/textViewbp2"
+        android:layout_width="243dp"
+        android:layout_height="48dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="55dp"
+        android:layout_marginEnd="135dp"
+        android:background="#8603b8"
+        android:capitalize="none"
+        android:text="Normal Pressure"
+        android:textAlignment="center"
+        android:textColor="@color/white"
+        android:textSize="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/bppp" />
+
+    <ImageButton
+        android:id="@+id/imageButtonbp"
+        android:layout_width="57dp"
+        android:layout_height="68dp"
+        android:layout_marginTop="168dp"
+        android:layout_marginEnd="28dp"
+        android:background="#FFFFFF"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.597"
+        app:layout_constraintStart_toEndOf="@+id/textViewbp2"
+        app:layout_constraintTop_toBottomOf="@+id/bppp"
+        app:srcCompat="@drawable/ic_baseline_check_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:visibility="gone"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
